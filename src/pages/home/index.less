@@ -1,0 +1,101 @@
+.container {
+  .header-bg {
+    width: 100%;
+    height: 378px;
+    // margin-top: -128px;
+    background-size: 100% 378px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header {
+    padding: 128px 40px 0 40px;
+    display: flex;
+    &>View{
+      display: flex;
+      align-items: center;
+      height: 105px;
+      &:nth-child(2){
+        flex-grow: 1;
+        margin-left: 27px;
+        color: #fff;
+        View{
+          font-size: 36px;
+        }
+        Text{
+          font-size: 19px;
+        }
+      }
+      &:last-child{
+        width: 120px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .avatar{
+      Image {
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .main-content{
+    padding-bottom: 78px;
+    border-bottom: 14px solid #F5F5F5;
+    .main{
+      margin-top: 133px;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      .content {
+        align-items: center;
+        &>View{
+          margin-left: 35px;
+        }
+      }
+      &>View{
+        width: 318px;
+        height: 165px;
+        background-size: 318px 165px;
+        &:first-child{
+          margin-right: 22px;
+        }
+      }
+    }
+    .more{
+      margin-top: 78px;
+      display: flex;
+      padding: 0 90px;
+      justify-content: space-between;
+      text-align: center;
+      Image{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+  .activity-content{
+    padding-top: 51px;
+    .title{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px 32px 50px;
+    }
+    .swiper{
+      height: 216px;
+    }
+    .swiper-image{
+      width: 660px;
+      height: 216px;
+      text-align: center;
+      Image{
+        width: 660px;
+        height: 216px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

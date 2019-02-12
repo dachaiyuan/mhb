@@ -1,0 +1,35 @@
+.container{
+  .content{
+    .transaction{
+      display: flex;
+      padding: 40px 40px 0;
+      &:not(:last-child){
+        .info{
+          border-bottom: 1px solid #ecedf1;
+        }
+      }
+      .type{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #babcca;
+        color: #fff;
+        text-align: center;
+        line-height: 100px;
+        font-size: 50px;
+        margin-right: 40px;
+      }
+      .info{
+        display: flex;
+        flex: 1;
+        padding-bottom: 32px;
+        .from{
+          margin: 6px 0;
+        }
+      }
+    }
+    .loading{
+      height: 100px;
+    }
+  }
+}

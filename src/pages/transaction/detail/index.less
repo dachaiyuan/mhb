@@ -1,0 +1,40 @@
+page{
+  background-color: #F7F8FC;
+}
+.container{
+  .status{
+    margin: 86px 0;
+    &>View{
+      margin-top: 35px;
+    }
+  }
+  .content{
+    width: 656px;
+    padding: 64px 50px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 28px;
+    .item{
+      &:not(:first-child){
+        margin-top: 30px;
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .extra{
+    padding: 36px 50px;
+    .extra-content{
+      margin-top: 40px;
+      border-radius: 20px;
+      padding: 40px;
+      background-color: #fff;
+      .item{
+        &:not(:last-child){
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

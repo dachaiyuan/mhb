@@ -1,0 +1,97 @@
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  .content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    .main{
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to bottom, #3D85FA , #2E68FA);
+      .amount-wrap{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        &>View{
+          width: 100%;
+          align-items: center;
+        }
+        .amount{
+          flex-grow: 1;
+          text-align: center;
+          margin-left: 50px;
+          overflow: hidden;
+          transition: all 0.3s;
+        }
+        .select{
+          width: 163px;
+          height: 78px;
+          background-color: #255BDE;
+          border-radius: 8px;
+          margin: 0 50px;
+          &:after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 12px;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            position: relative;
+            right: -8px;
+            top: 8px;
+          }
+        }
+      }
+      .balance{
+        height: 70px;
+        color: #BBF9DF;
+      }
+      .currencys {
+        transition: height 0.5s;
+        background-color: #000;
+        overflow: hidden;
+        .swiper{
+          height: 144px;
+          .item{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            Image{
+              width: 81px;
+              height: 81px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    .keyboard{
+      display: grid;
+      font-size: 40px;
+      border-top: 1px solid #5383FB;
+      border-bottom: 1px solid #5383FB;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 120px);
+      place-items: stretch;
+      grid-gap: 2px;
+      background-color: #5383FB;
+      View{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2E68FA;
+      }
+    }
+  }
+  .footer{
+    background-color: #2960EB;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+}

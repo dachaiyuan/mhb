@@ -1,0 +1,17 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "%E5%A6%99%E6%B1%87%E5%AE%9D",
+	"description": "妙汇宝微信小程序",
+	"appid": "wxee6f84c4c830bae5",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.3",
+	"condition": {}
+}
